@@ -11,7 +11,7 @@ public class RogueThread implements Runnable {
 
             if (sNewWord != null)
             {
-            // when strike reaches 3 nothing happens right now
+            // **** when strike reaches 3 nothing happens right now ****
                 MerkleManager.strikeCount+=1;
                 System.out.println("Rogue grabbed a word! STRIKE " + MerkleManager.strikeCount);
             }
