@@ -1,3 +1,4 @@
+
 // Merkle Manager
 // Authors: Tyler Dollick, Reese Norris
 
@@ -13,7 +14,7 @@ public class MerkleManager {
         MerkleManager.expectedMerkleRoot = util.promptUser("Enter expected merkle root:");
 
         Thread merkleThread = new Thread(new MerkleThread());
-        Thread rogueThread = new Thread(new RougeThread());
+        Thread rogueThread = new Thread(new RogueThread());
         Thread monitorThread = new Thread(new MonitorThread());
         merkleThread.start();
         rogueThread.start();
